@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://unpkg.com/splitting@1.0.6/dist/splitting.css">
+   <link rel="stylesheet" href="./src/css/reset.css">
+   <link rel="stylesheet" href="./src/css/style.css">
+   <link rel="shortcut icon" href="./src/assets/spaceship.png" type="image/x-icon">
+    <title>🚀 Sistema Solar 🚀</title>
+</head>
+<body>
+<script src="https://codepen.io/shshaw/pen/QmZYMG.js"></script>
+
+<div id="app" data-current-planet="Mercúrio">
+
+  <nav class="planet-nav">
+    <svg viewBox="0 20 400 400" xmlns="http://www.w3.org/2000/svg">
+
+<!--       <defs> -->
+        <path 
+            id="navPath" 
+            d="M10,200 C30,-28 370,-28 390,200"
+            fill="none" />
+<!--       </defs> -->
+
+      <text>
+        <textPath href="#navPath" startOffset="0" font-size="10">
+          <tspan>Mercúrio</tspan>
+          <tspan>Vênus</tspan>
+          <tspan>Terra</tspan>
+          <tspan>Marte</tspan>
+          <tspan>Júpiter</tspan>
+          <tspan>Saturno</tspan>
+          <tspan>Urano</tspan>
+          <tspan>Netuno</tspan>
+        </textPath>
+      </text>
+
+    </svg>
+  </nav>
+
+  <div class="planet" data-planet="Mercúrio" data-active>
+    <div class="planet-title">
+      <h1>Mercúrio</h1>
+      <p class="planet-description">Minúsculo e perto do sol.</p>
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="inclinação" data-postfix="°">
+        3.13
+      </div>
+      <div class="detail" data-detail="gravidade" data-postfix="𝗑">
+        0.9
+      </div>
+      <div class="detail" data-detail="horas">
+        10
+      </div>
+    </div>
+
+    <figure class="planet-figure">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/1_mercury.jpg" />
+    </figure>
+  </div>
+
+  <div class="planet" data-planet="Vênus">
+    <div class="planet-title">
+      <h1>Vênus</h1>
+      <p class="planet-description">Um planeta de navalhas e tenistas.</p>
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="inclinação" data-postfix="°">
+        4.13
+      </div>
+      <div class="detail" data-detail="gravidade" data-postfix="𝗑">
+        0.2
+      </div>
+      <div class="detail" data-detail="horas">
+        20
+      </div>
+    </div>
+
+    <figure class="planet-figure">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/2_venus.jpg" />
+    </figure>
+  </div>
+
+  <div class="planet" data-planet="Terra">
+    <div class="planet-title">
+      <h1>Terra</h1>
+      <p class="planet-description">Eleito o melhor planeta do Sistema Solar por todos os organismos.</p>
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="inclinação" data-postfix="°">
+        5.13
+      </div>
+      <div class="detail" data-detail="gravidade" data-postfix="𝗑">
+        7.3
+      </div>
+      <div class="detail" data-detail="horas">
+        30
+      </div>
+    </div>
+
+    <figure class="planet-figure">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/3_earth.jpg" />
+    </figure>
+  </div>
+
+  <div class="planet" data-planet="Marte">
+    <div class="planet-title">
+      <h1>Marte</h1>
+      <p class="planet-description">Futuro site do AirBnB de Elon Musk.😎</p>
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="inclinação" data-postfix="°">
+        6.13
+      </div>
+      <div class="detail" data-detail="gravidade" data-postfix="𝗑">
+        1.1
+      </div>
+      <div class="detail" data-detail="horas">
+        40
+      </div>
+    </div>
+
+    <figure class="planet-figure">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/4_mars.jpg" />
+    </figure>
+  </div>
+
+  <div class="planet" data-planet="Júpiter">
+    <div class="planet-title">
+      <h1>Júpiter</h1>
+      <p class="planet-description">Duas vezes mais massivo que outros planetas combinados.</p>
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="inclinação" data-postfix="°">
+        11.13
+      </div>
+      <div class="detail" data-detail="gravidade" data-postfix="𝗑">
+        1.8
+      </div>
+      <div class="detail" data-detail="horas">
+        50
+      </div>
+    </div>
+
+    <figure class="planet-figure">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/5_jupiter.jpg" />
+    </figure>
+  </div>
+
+  <div class="planet" data-planet="Saturno">
+    <div class="planet-title">
+      <h1>Saturno</h1>
+      <p class="planet-description">Este planeta patrocinado por Zales.</p>
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="inclinação" data-postfix="°">
+        9.13
+      </div>
+      <div class="detail" data-detail="gravidade" data-postfix="𝗑">
+        7.3
+      </div>
+      <div class="detail" data-detail="horas">
+        60
+      </div>
+    </div>
+
+    <figure class="planet-figure">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/6_saturn.jpg" />
+    </figure>
+  </div>
+
+  <div class="planet" data-planet="Urano">
+    <div class="planet-title">
+      <h1>Urano</h1>
+      <p class="planet-description">Ei, pare de rir. Não é engraçado.</p>
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="inclinação" data-postfix="°">
+        11.13
+      </div>
+      <div class="detail" data-detail="gravidade" data-postfix="𝗑">
+        1.8
+      </div>
+      <div class="detail" data-detail="horas">
+        50
+      </div>    </div>
+
+    <figure class="planet-figure">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/7_uranus.jpg" />
+    </figure>
+  </div>
+
+
+  <div class="planet" data-planet="Netuno">
+    <div class="planet-title">
+      <h1>Netuno</h1>
+      <p class="planet-description">Um planeta para piratas; passou por pouco quando os cientistas decidiram que nove planetas eram demais.</p>
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="inclinação" data-postfix="°">
+        31.03      </div>
+      <div class="detail" data-detail="gravidade" data-postfix="𝗑">
+        8.9      </div>
+      <div class="detail" data-detail="horas">
+        10
+      </div>
+    </div>
+
+    <figure class="planet-figure">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/8_neptune.jpg" />
+    </figure>
+  </div>
+</div>
+<script src="https://unpkg.com/splitting@1.0.6/dist/splitting.min.js"></script>
+<script src="./src/js/index.js"></script>
+</body>
+</html>
